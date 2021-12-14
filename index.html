@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="index.css">
+    <title>Project sem 3</title>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Fixed navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="row">
+            <div class="col-2">
+                <div class="quotes">
+                    Playing Sport with <br>style
+                </div>
+            </div>
+            <div class="col-2">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="image">
+                                <img class=" d-block w-100" src="pic/adidas-tiro-tracksuit-black-model.jpg" alt="">
+                            </div>
+                            <div class="image__overlay image__overlay--blur">
+                                <div class="image__title">
+                                    Sporties omg wtf bad color
+                                </div>
+                                <div class="image_description">
+                                    abcxyzajdakdak
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="image">
+                                <img class=" d-block w-100" src="pic/adidas-tiro-tracksuit-black-model.jpg" alt="">
+                            </div>
+                            <div class="image__overlay image__overlay--blur">
+                                <div class="image__title">
+                                    Sporties omg wtf bad color
+                                </div>
+                                <div class="image_description">
+                                    abcxyzajdakdak
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="image">
+                                <img class=" d-block w-100" src="pic/adidas-tiro-tracksuit-black-model.jpg" alt="">
+                            </div>
+                            <div class="image__overlay image__overlay--blur">
+                                <div class="image__title">
+                                    Sporties omg wtf bad color
+                                </div>
+                                <div class="image_description">
+                                    abcxyzajdakdak
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="icon facebook">
+            <div class="tooltip">
+                Facebook
+            </div>
+            <span><i class="fab fa-facebook-f"></i></span>
+        </div>
+        <div class="icon twitter">
+            <div class="tooltip">
+                Twitter
+            </div>
+            <span><i class="fab fa-twitter"></i></span>
+        </div>
+        <div class="icon instagram">
+            <div class="tooltip">
+                Instagram
+            </div>
+            <span><i class="fab fa-instagram"></i></span>
+        </div>
+
+        <div class="icon youtube">
+            <div class="tooltip">
+                YouTube
+            </div>
+            <span><i class="fab fa-youtube"></i></span>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js">
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+
+
+
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- https://cdnjs.com/libraries/popper.js/2.5.4 -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"
+    ></script> -->
+
+    <!-- More: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+</body>
+
+</html>
